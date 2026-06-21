@@ -1,0 +1,90 @@
+.admin-root {
+  --admin-blue: #2563eb;
+  --admin-orange: #f6a623;
+  --admin-bg: #f4f6fb;
+  --admin-bg-card: #ffffff;
+  --admin-text: #111827;
+  --admin-text-muted: #6b7280;
+  --admin-border: #e5e7eb;
+
+  background: var(--admin-bg);
+  color: var(--admin-text);
+  font-family: var(--font-dm-sans), system-ui, sans-serif;
+  min-height: 100vh;
+  cursor: auto;
+}
+
+.admin-root.dark {
+  --admin-bg: #0f1115;
+  --admin-bg-card: #181b22;
+  --admin-text: #f3f4f6;
+  --admin-text-muted: #9aa0ac;
+  --admin-border: #262a33;
+}
+
+.admin-card {
+  background: var(--admin-bg-card);
+  border: 1px solid var(--admin-border);
+  border-radius: 1rem;
+}
+
+.admin-input {
+  background: var(--admin-bg-card);
+  border: 1px solid var(--admin-border);
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  color: var(--admin-text);
+  width: 100%;
+  font-size: 0.875rem;
+}
+
+.admin-input:focus {
+  outline: none;
+  border-color: var(--admin-blue);
+}
+
+.admin-btn-primary {
+  background: var(--admin-blue);
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.admin-btn-primary:hover {
+  background: #1d4ed8;
+}
+
+.admin-btn-ghost {
+  background: transparent;
+  border: 1px solid var(--admin-border);
+  color: var(--admin-text);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+.admin-btn-ghost:hover {
+  background: var(--admin-bg);
+}
+
+.admin-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.625rem 0.875rem;
+  border-radius: 0.625rem;
+  font-size: 0.875rem;
+  color: var(--admin-text-muted);
+}
+
+.admin-nav-link:hover {
+  background: var(--admin-bg);
+  color: var(--admin-text);
+}
+
+.admin-nav-link.active {
+  background: var(--admin-blue);
+  color: white;
+}

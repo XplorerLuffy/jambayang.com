@@ -7,9 +7,6 @@ import {
   DM_Sans,
 } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import CustomCursor from "@/components/CustomCursor";
 
 const syne = Syne({
   variable: "--font-syne",
@@ -74,10 +71,7 @@ export default function RootLayout({
       className={`${syne.variable} ${cormorant.variable} ${spaceMono.variable} ${dmMono.variable} ${dmSans.variable}`}
     >
       <body>
-        <CustomCursor />
-        <Navbar />
         {children}
-        <Footer />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

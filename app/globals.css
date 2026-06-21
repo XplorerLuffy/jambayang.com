@@ -54,6 +54,15 @@ body {
   }
 }
 
+body.admin-active {
+  cursor: auto;
+}
+
+body.admin-active::before,
+body.admin-active::after {
+  display: none;
+}
+
 /* Noise / grain overlay */
 body::before {
   content: "";
